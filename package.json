@@ -18,7 +18,7 @@
     "compile": "tsc -b tsconfig.build.json",
     "prepare": "npm run compile",
     "cli": "ts-node packages/cli/src/index.ts",
-    "lint": "npm run cli lint resources/pets.yaml -- --format stylish",
+    "lint": "npm run cli lint resources/pets.yaml -- --format stylish --config resources/redocly.yaml",
     "bundle": "npm run cli bundle resources/pets.yaml",
     "stats": "npm run cli stats resources/pets.yaml",
     "split": "npm run cli split resources/pets.yaml -- --outDir output",
